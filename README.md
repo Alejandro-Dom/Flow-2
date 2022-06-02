@@ -10,5 +10,5 @@ El ejercicio consiste en comprender como se importa un archivo JSON para poder m
     -Ir al botón hamburguesa y seleccionar manage palette
     -Buscar el paquete node-red-dashboard
     -instalar el paquete
--Arrastrar un nodo text de la sección de nodos dashboard
-- Seguir los pasos de la pagina https://edu.codigoiot.com/mod/page/view.php?id=1080, para poder configurar el nodo text
+- Arrastrar un nodo text de la sección de nodos dashboard
+-Seguir los pasos de la pagina https://edu.codigoiot.com/mod/page/view.php?id=1080, para poder configurar el nodo text
