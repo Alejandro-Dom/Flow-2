@@ -19,6 +19,11 @@
             {
                 "p": "topic",
                 "vt": "str"
+            },
+            {
+                "p": "G7",
+                "v": "Hola G7",
+                "vt": "str"
             }
         ],
         "repeat": "15",
@@ -32,7 +37,8 @@
         "y": 100,
         "wires": [
             [
-                "ca7f5d90f17a2f0c"
+                "ca7f5d90f17a2f0c",
+                "dc322bce6bdb836e"
             ]
         ]
     },
@@ -45,11 +51,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 630,
+        "x": 610,
         "y": 100,
         "wires": []
     },
@@ -69,32 +75,49 @@
         "wires": [
             [
                 "c80995931edf0d29",
-                "a4936af82ebf8bd2"
+                "2b99532c054eba97"
             ]
         ]
     },
     {
-        "id": "a4936af82ebf8bd2",
+        "id": "2b99532c054eba97",
         "type": "ui_text",
         "z": "87bb58aa769e9918",
-        "group": "d4daef462e228e8a",
+        "group": "7b88cceeb39435a1",
         "order": 0,
         "width": 0,
         "height": 0,
         "name": "",
-        "label": "La fecha es",
+        "label": "Fecha - Label",
         "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "layout": "col-center",
         "className": "",
-        "x": 650,
+        "x": 640,
         "y": 180,
         "wires": []
     },
     {
-        "id": "d4daef462e228e8a",
+        "id": "dc322bce6bdb836e",
+        "type": "debug",
+        "z": "87bb58aa769e9918",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7b88cceeb39435a1",
         "type": "ui_group",
-        "name": "Hora",
-        "tab": "99b38236b834fc63",
+        "name": "Fecha - Group",
+        "tab": "38dd7de790a94dfe",
         "order": 1,
         "disp": true,
         "width": "6",
@@ -102,9 +125,9 @@
         "className": ""
     },
     {
-        "id": "99b38236b834fc63",
+        "id": "38dd7de790a94dfe",
         "type": "ui_tab",
-        "name": "Hora",
+        "name": "Fecha - Tab",
         "icon": "dashboard",
         "order": 1,
         "disabled": false,
